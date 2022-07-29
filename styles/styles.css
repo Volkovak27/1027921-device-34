@@ -2,7 +2,7 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
-    src: url("fonts/raleway-800.woff2") format("woff2");
+    src: url("../fonts/raleway-800.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -10,7 +10,7 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/rubik-400.woff2") format("woff2");
+    src: url("../fonts/rubik-400.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -18,47 +18,160 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/rubik-700.woff2") format("woff2");
+    src: url("../fonts/rubik-700.woff2") format("woff2");
     font-display: swap;
   }
 
   body {
+    margin: 0;
+    min-height: 100%;
     font-family: "Raleway";
     font-size: 18px;
     line-height: 24px;
     color: #000000;
     font-weight: 400;
-    background-color: #ffffff;
+  }
+
+  .page-header {
+    padding-top: 10px;
+    padding-left: 60px;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(255,225,127,1) 90%, rgba(255,255,255,1) 90%);          
+  }
+
+
+  
+  .navigation {
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 60px;
+    margin-right: 60px;
+
+  }
+
+   .navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-  }
+   }
+    
+    .navigation-item {
+      display: flex;
+      margin-top: 30px;
+      
+    }
 
-  .subscription-index {
-    font-family: "Rubik";
+
+
+    .user-item {
+      margin-right: 200px;
+     }
+
+     .image-icons {
+      margin-right: 13px;
+     
+     }
+     
+  .navigation-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
     color: #000000;
-    font-weight: 400;
-    background-color: #ffffff;
+    text-decoration: none; 
   }
 
-  .user-home {
-    font-family: "Rubik";
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    font-weight: 400;
-    background-color: #ffffff;
-  }
+   .navigation-item input[type=search] {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    height: 40px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border: 2px solid #000000;
+    border-radius: 50px 0px 0px 50px;
+ } 
 
-  .navigation-user {
-    font-family: "Rubik";
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    font-weight: 400;
-    background-color: #ffffff;
+
+
+    .search-icon{
+     background: url("../images/search.svg") no-repeat ;
+     background-position: 5% 50%;
+     outline: 0 !important;
   }
+    
+    ::placeholder {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+    }
+    .form-button {
+      display: flex;
+      flex-direction: row;
+      width: 160px;
+      height: 40px;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      border: 2px solid #000000;
+      border-left: none;
+      border-radius: 0px 50px 50px 0px;
+      background-color: #FFE17F;
+      cursor: pointer;
+    }
+
+    
+    .navigation-catalog {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+    }
+
+     .catalog-item {
+      display: flex;
+      margin-right: 45px;
+      margin-top: 30px;
+     }
+
+    .catalog-link {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase; 
+      color: #000000;
+      text-decoration: none;
+    }
+    
+
+    .catalog-one {
+      margin-right: 280px;
+    }
+
+  .main-container {
+    flex-grow: 1;
+  }
+  
 
   .page-catalog {
     font-family: "Raleway";
@@ -68,7 +181,10 @@
     font-weight: 800;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: #ffffff;
+
+  }
+  .slider-block {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(255,225,127,1) 83%);
   }
 
   .slider-title {
@@ -78,7 +194,6 @@
     line-height: 50px;
     color: #000000;
     font-weight: 800;
-    background-color: #ffffff;
   }
 
   .slider-description {
@@ -88,22 +203,8 @@
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-    background-color: #ffffff;
   }
 
-  .button {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
-  }
 
   .table-title {
     font-family: 'Rubik';
@@ -134,22 +235,7 @@
     line-height: 24px;
     letter-spacing: -0.02em;
     color: #000000;
-    background-color: #ffffff;
-  }
-
-
-  .form-button {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
+  
   }
 
   .delivery-text {
@@ -216,6 +302,15 @@
     background-color: #ffffff;
   }
 
+  .subscription-index {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+   }
+
+
 
   .subscription-title {
     font-family: 'Raleway';
@@ -275,8 +370,6 @@
     background-color: #ffffff;
     
   }
-
-
 
    .page-footer {
    font-family: 'Rubik';

@@ -9,61 +9,55 @@
     <header class="page-header">
       <nav class="navigation">
         <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс">
-    <section class="subscription-index">
-      <form
-        class="appointment-form"
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-      >
-      <label for="appointment-search">Текст поиска</label>
-        <input
-          type="search"
-          id="appointment-search"
-          name="search"
-          placeholder="Текст поиска"
-        />
-        <button class="form-button" type="submit">Найти</button>
-      </form>
-    </section>
-    <ul class="navigation-list user-home">
-        <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Войти</span>
-        </a>
-      </li>
-    </ul>
-        <ul class="navigation-list navigation-user">
+
+        <ul class="navigation-list">
+          <li class="navigation-item search-item">
+            <input class="search-icon" type="search" placeholder="Текст поиска">
+            <button class="form-button" type="submit">Найти</button>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link user-link" href="#">
+              <img class="image-icons" src="images/user.svg" alt=""/>
+              <span class="user-item">Войти</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span></span>
+            </a>
+          </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Сравнить</span>
+              <a class="navigation-link compare-link" href="#">
+                <img class="image-icons" src="images/compare.svg" alt=""/>
+                <span class="compare-item">Сравнить</span>
               </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Корзина</span>
+                <img class="image-icons" src="images/basket.svg" alt=""/>
+                <span>Корзина</span> 
               </a>
             </li>
           </ul>
-          <ul class="navigation-list page-catalog"> 
+          <ul class="navigation-catalog"> 
             <li class="navigation-item">
-            <a class="navigation-link" href="№">Каталог товаров</a>
-          </li>
+              <a class="catalog-link catalog-one" href="№">Каталог товаров</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Доставка</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="catalog.html">Гарантия</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="catalog.html">Контакты</a>
+            </li>
         </ul>
-        <ul class="navigation-list delivery-block">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Контакты</a>
-          </li>
-        </ul>
+
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
     <section class="slider-block">
         <img class="slider-image" src="images/dron-1.png" width="560px" height="560px" alt="Картинка с дроном в слайдере">
         <h1 class="slider-title">Порхает как бабочка, жалит как пчела!</h1>
@@ -119,15 +113,14 @@
        <section class="info-block">
         <div class="info-container">         
             <ul class="info-list">
-            <li class="info-item active-bottom"><button class="form-button" type="submit">Доставка</button></li>
-            <li class="info-item"><button class="form-button" type="submit">Гарантия</button></li>
-            <li class="info-item"><button class="form-button" type="submit">Кредит</button></li>
+            <li class="info-item active-bottom"><button class="list-button" type="submit">Доставка</button></li>
+            <li class="info-item"><button class="list-button" type="submit">Гарантия</button></li>
+            <li class="info-item"><button class="list-button" type="submit">Кредит</button></li>
           </ul>
         </div>
         <div class="info-text">
             <h2 class="info-title">Доставка</h2>
             <p class="info-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img class="info-image" src="images/man.png" width=133" height="158" alt="Бегущий человечек в блоке доставка">
         </div>
        </section>
       
@@ -144,7 +137,7 @@
             <li class="about-item">СДИК</li>
             <li class="about-item">ТоксБерри</li>
           </ul>
-          <button class="about-button button" type="submit">Подробнее о нас</button>
+          <button class="about-button" type="submit">Подробнее о нас</button>
         </div>
         <div class="contact-container">
           <h2 class="contact-title">Контакты</h2>
@@ -177,7 +170,7 @@
             name="email"
             placeholder="Ваш e-mail"
           />
-          <button class="form-button" type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
         <span class="subscription-index text">Это бесплатно</span>
       </section>
